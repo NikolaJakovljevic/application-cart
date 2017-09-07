@@ -1,0 +1,489 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+* {
+  outline: none !important;
+}
+
+.btn-success {
+  border-color: green;
+  background-color: green;
+}
+
+body {
+  /* Margin bottom by footer height */
+  /*margin-bottom: 60px;*/
+  background-color: rgb(35, 37, 37);
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+             supported by Chrome and Opera */
+  font-family: 'Lato', sans-serif;
+}
+
+.tables-background {
+  background-color: rgb(35, 37, 37);
+}
+
+.table-order, .user-info {
+  border: 1px solid white;
+  padding: 9px;
+  width: 95%;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.navbar {
+  background-color: rgb(35, 37, 37);
+  margin: 0;
+  border: 0;
+}
+
+.footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 165px;
+  line-height: 60px;
+  /* Vertically center the text there */
+  background-color: rgb(60, 63, 65);
+}
+
+.footer-menu-button {
+  //height: 68px;
+    font-size: 11px;
+
+  color: white;
+  text-transform: uppercase;
+  background-color: #d04a0b;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.layouts {
+  background-color: #03A9F4;
+}
+
+.date-time {
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 14px;
+  p {
+    line-height: 15px;
+    margin-bottom: 5px;
+  }
+}
+
+.footer-log-out {
+
+    p {
+      a {
+        font-size: 11px;
+      }
+    }
+
+  background-color: #F44336;
+  font-size: 11px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.table-bench {
+  div {
+    padding: 1px;
+    //background-color: brown;
+    border-radius: 5px;
+  }
+  padding-right:0;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+  height: 100px;
+  line-height: 195%;
+  div p {
+    margin: 0;
+  }
+}
+
+
+.user-info {
+  margin-top: 5px;
+  background-color: rgb(60, 63, 65);
+}
+
+.table-order {
+  background-color: rgb(60, 63, 65);
+  overflow: auto;
+  height: 350px;
+}
+
+#categories {
+  background-color: rgb(60, 63, 65);
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid white;
+  border-radius: 5px;
+  div {
+    //padding-right: 0;
+    padding-left: 0;
+    button {
+      margin-right: 5px;
+      margin-bottom: 5px;
+      width: 100%;
+      font-size: 14px;
+      height: 50px;
+      background-color: #2980b9;
+      border-color: #2980b9;
+    }
+  }
+
+}
+
+#subcategories {
+  margin-top: 5px;
+  padding: 0;
+  background-color: rgb(60, 63, 65);
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  div {
+    padding-left: 0 !important;
+    padding-bottom: 5px;
+    button {
+      margin-right: 5px;
+      margin-bottom: 5px;
+      width: 100%;
+      font-size: 14px;
+      height: 50px;
+      background-color: green;
+      border-color: green;
+    }
+  }
+
+}
+
+#products {
+  background-color: rgb(60, 63, 65);
+  padding: 10px 5px 15px 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 10px;
+
+  .products {
+    margin-bottom: 10px;
+    padding-left: 0;
+    cursor: pointer;
+    border-radius: 5px;
+
+    button {
+      width: 100%;
+      height: 50px;
+      background-color: #232525;
+      border-color: white;
+      font-size: 14px;
+      white-space: normal;
+      line-height: 1;
+      padding: 3px 16px;
+    }
+
+
+    p {
+      margin-top: 9%;
+    }
+    > img {
+      cursor: pointer;
+    }
+
+  }
+
+}
+
+.selected-subcategory-button {
+  background-color: #F44336;
+  border-color: #F44336;
+}
+
+
+#modal {
+  background-color: rgb(35, 37, 37);
+  color: #FFFFFF;
+}
+
+.table-free {
+  div {
+    background-color: green;
+    padding: 1%;
+    height: 100px;
+    line-height: 3.5em;
+  }
+}
+
+.self-table {
+  text-decoration: underline;
+}
+
+.table-disabled, .action-disabled {
+  pointer-events: none;
+}
+
+.footer-log-out > a {
+  text-decoration: none;
+  color: #FFFFFF;
+  > p {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.footer-table {
+  /*height: 210px;*/
+  text-transform: uppercase;
+  > .container-fluid {
+    padding: 5px !important;
+  }
+}
+
+.footer-table-orders-action {
+  div {
+    border: 1px solid #03A9F4;
+    cursor: pointer;
+    background-color: #03A9F4;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    /*width: 30%;*/
+    border-radius: 5px;
+
+    p{
+      font-size: 12px;
+    }
+  }
+
+}
+
+.footer-table-orders-payment {
+
+  div{
+    border: 1px solid #d04a0b;
+    background-color: #d04a0b;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    /*width: 35%;*/
+    border-radius: 5px;
+    cursor: pointer;
+
+    p{
+      font-size: 12px;
+    }
+  }
+
+}
+
+.footer-table-orders-check {
+  div{
+    p {
+      font-size: 11px;
+    }
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
+
+}
+
+.footer-back {
+  background-color: #F44336;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#made-check-button {
+  background-color: green;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#order-total {
+  /*border: 1px solid white;*/
+  padding: 9px;
+  width: 95%;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.selected-button {
+  background-color: green !important;
+  border-color: green !important;
+  &:hover, &:active, &:visited {
+    background-color: green !important;
+    border-color: green !important;
+  }
+}
+
+#discount-modal, #cancallation-modal {
+  padding: 10px;
+  width: auto;
+  background-color: rgb(60, 63, 65);
+  border-right: 3px solid #2980b9;
+  border-left: 3px solid #2980b9;
+}
+
+#discount-modal .discounts button {
+  border-color: #d04a0b;
+  background-color: #d04a0b;
+  margin-bottom: 5px;
+  width: 55%;
+}
+
+#cancallation-modal .discounts button {
+  border-color: #d04a0b;
+  background-color: #d04a0b;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.btn-danger {
+  border-color: #F44336;
+  background-color: #F44336;
+}
+
+.keyboard-open {
+  cursor: pointer;
+}
+
+/* keyboard */
+
+.ui-keyboard {
+  position: relative !important;
+  width: 40% !important;
+  top: -1.4em !important;
+  margin: 0 auto !important;
+}
+
+/* keyboard */
+
+/* login page */
+
+.login-form {
+  margin-top: 20%;
+  visibility: hidden;
+  border-radius: 5px !important;
+  .panel-default, .panel-heading {
+    background-color: rgb(60, 63, 65);
+    color: #ffffff;
+  }
+}
+
+#login-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* login page */
+
+/* cash modal */
+
+#cash-modal-content {
+  padding: 10px;
+  color: #ffffff;
+  width: auto;
+  background-color: rgb(60, 63, 65);
+  border-right: 3px solid #2980b9;
+  border-left: 3px solid #2980b9;
+  input[type="text"] {
+    font-size: 24px;
+    text-align: right;
+  }
+  .order-amount {
+    font-size: 30px;
+  }
+  .order-paid, .order-change {
+    font-size: 25px;
+  }
+  .order-paid, .order-change {
+    margin-bottom: 5px;
+  }
+}
+
+#repeat-order-content {
+  padding: 10px;
+  color: #ffffff;
+  width: auto;
+  background-color: rgb(60, 63, 65);
+  border-right: 3px solid #2980b9;
+  border-left: 3px solid #2980b9;
+  input[type="text"] {
+    font-size: 24px;
+    text-align: right;
+  }
+   .list-group-item {
+     border-color: #d04a0b;
+     background-color: #d04a0b;
+     margin-bottom: 8px;
+     border-radius: 5px;
+     cursor: pointer;
+   }
+
+  .repeat-all {
+    border-color: #2980b9;
+    background-color: #2980b9;
+    text-align: center;
+  }
+
+  .reset-order-button {
+    border-color: #2980b9;
+    background-color: transparent;
+    text-align: center;
+  }
+}
+
+
+
+/* cash modal */
+
+@media only screen and (max-width: 768px) {
+  .footer, footer-table {
+    position: relative !important;
+    height: auto;
+  }
+  .table-bench > div {
+    margin-top: 0;
+  }
+}
